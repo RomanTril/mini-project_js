@@ -1,0 +1,45 @@
+/* post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.postWrapper,.commentMainWrapper{
+    background: cadetblue;
+    font-size: 20px;
+    border: #0b1321 1px solid;
+    border-radius: 5px;
+    display: flex;
+}
+
+.postWrapper,.commentWrapper{
+    flex-direction: column;
+    text-align: center;
+}
+.postWrapper{
+    justify-content: center;
+}
+
+.commentMainWrapper,.commentWrapper{
+    box-sizing: border-box;
+}
+
+.commentMainWrapper{
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.commentWrapper{
+    background: grey;
+    width: 22%;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: start;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px white;
+    border: paleturquoise solid 2px;
+}

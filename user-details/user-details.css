@@ -1,0 +1,64 @@
+/*user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.*/
+/*блоки з короткою іфною про post - в ряд по 5 .*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.block{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block,.postMainWrap,.postTitleWrap,.block>button,.postDetailsButton{
+    border: #0b1321 1px solid;
+    border-radius: 5px;
+}
+
+.block,.postMainWrap{
+    background: cadetblue;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.block>button,.block>button:hover,.postDetailsButton,.postDetailsButton:hover{
+    transition: 1s;
+}
+
+.block>button,.postDetailsButton{
+    background: pink;
+}
+
+.block>button:hover,.postDetailsButton:hover{
+    background: darkred;
+    color: pink;
+}
+
+.block>button{
+    width: 90%;
+    height: 50px;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.postMainWrap{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.postTitleWrap{
+    width: 250px;
+    height: 200px;
+    background: cornflowerblue;
+    text-align: center;
+    margin: 10px;
+}
+
+.postTitleWrap>div{
+    margin: 5px;
+}
+
+.postDetailsButton{
+    font-size: 20px;
+}

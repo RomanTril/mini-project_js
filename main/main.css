@@ -1,0 +1,47 @@
+/*Стилизація проєкта -*/
+/*index.html - всі блоки з user - по 2 в рядок. кнопки/аосилвння розташувати під інформацією про user.*/
+/* Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainWrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wrapper{
+    background: antiquewhite;
+    width: 40%;
+    text-align: center;
+    border: #0b1321 1px solid;
+}
+
+.wrapper,button{
+    margin: 10px;
+    border-radius: 5px;
+}
+.wrapper>div{
+    margin: 5px;
+    color: #0b1321;
+}
+
+button,button:hover{
+    transition: 1s;
+}
+button{
+    background: cornflowerblue;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+button:hover{
+    background: crimson;
+    box-shadow: blue 1px 1px;
+}
